@@ -7,12 +7,14 @@ import { FormsModule } from '@angular/forms';
 import { DatepickerComponent, DatepickerComponentDialog } from './datepicker/datepicker.component';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
+import { BitpickerComponent } from './bitpicker/bitpicker.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DatepickerComponent,
-    DatepickerComponentDialog
+    DatepickerComponentDialog,
+    BitpickerComponent
   ],
   imports: [
     BrowserModule,
