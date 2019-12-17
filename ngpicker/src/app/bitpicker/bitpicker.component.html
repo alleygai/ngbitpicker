@@ -1,1 +1,8 @@
-<p>bitpicker works!</p>
+<ol>
+    <li>
+        <button mat-raised-button="" (click)="openDialog()">Pick Bit</button>
+    </li>
+    <li *ngIf="choosetime">
+        You chose: <i>{{choosetime}}</i>
+    </li>
+</ol>

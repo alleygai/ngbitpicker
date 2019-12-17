@@ -1,8 +1,11 @@
 <ol>
     <li>
-        <button mat-raised-button="" (click)="openDialog()">Pick one</button>
+        <button mat-raised-button="" (click)="openDialog()">Pick Date</button>
     </li>
-    <!-- <li *ngif="choosetime">
-        You chose: <i>{{choosetime}}</i>
-    </li> -->
+    <li *ngIf="choosedate">
+        You chose date: <i>{{choosedate}}</i>
+    </li>
+    <li *ngIf="choosetime">
+        You chose time: <i>{{choosetime}}</i>
+    </li>
 </ol>

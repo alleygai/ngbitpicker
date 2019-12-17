@@ -12,4 +12,5 @@ export class BitpickerComponent implements OnInit {
   ngOnInit() {
   }
 
+  openDialog(){}
 }

@@ -5,7 +5,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgMaterialModule } from './material-module';
 import { FormsModule } from '@angular/forms';
 import { DatepickerComponent, DatepickerComponentDialog } from './datepicker/datepicker.component';
-import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { BitpickerComponent } from './bitpicker/bitpicker.component';
 
@@ -18,10 +17,8 @@ import { BitpickerComponent } from './bitpicker/bitpicker.component';
   ],
   imports: [
     BrowserModule,
-    CommonModule,
     FormsModule,
     HttpClientModule,
-    CommonModule,
     BrowserAnimationsModule,
     NgMaterialModule
   ],

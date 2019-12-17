@@ -3,6 +3,7 @@ import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dial
 
 export interface DialogData {
   choosetime: string;
+  choosedate: string;
   name: string;
 }
 
@@ -12,24 +13,26 @@ export interface DialogData {
 @Component({
   selector: 'app-datepicker',
   templateUrl: 'datepicker.component.html',
-  styleUrls: ['datepicker.component.css'],
+  styleUrls: ['datepicker.component.css']
 })
 export class DatepickerComponent {
 
   choosetime: string;
+  choosedate: string;
   name: string;
 
   constructor(public dialog: MatDialog) { }
 
   openDialog(): void {
     const dialogRef = this.dialog.open(DatepickerComponentDialog, {
-      width: '300px',
-      data: { name: this.name, choosetime: this.choosetime }
+      width: '700px',
+      data: { name: this.name, choosetime: this.choosetime, choosedate: this.choosedate }
     });
 
     dialogRef.afterClosed().subscribe(result => {
       console.log('The dialog was closed');
-      this.choosetime = result;
+      this.choosetime = result.choosetime;
+      this.choosedate = result.choosedate; 
     });
   }
 
@@ -38,6 +41,7 @@ export class DatepickerComponent {
 @Component({
   selector: 'app-dialog-overview-example-dialog',
   templateUrl: 'datepicker-dialog.component.html',
+  styleUrls: ['datepicker-dialog.component.css']
 })
 // tslint:disable-next-line: component-class-suffix
 export class DatepickerComponentDialog {
