@@ -7,10 +7,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BitpickerComponent implements OnInit {
 
-  constructor() { }
+  public listArr: any[];
 
-  ngOnInit() {
+  constructor() {
+    this.listArr = [
+      {
+        id: 0,
+        title: 'Local.1.0:Pt01',
+        type: 'SINT'
+      },
+      {
+        id: 1,
+        title: 'Local.1.0:Pt02',
+        type: 'DINT'
+      }
+    ]
   }
 
-  openDialog(){}
+  ngOnInit() {
+
+  }
+
+  openDialog() { }
 }

@@ -32,7 +32,7 @@ export class DatepickerComponent {
     dialogRef.afterClosed().subscribe(result => {
       console.log('The dialog was closed');
       this.choosetime = result.choosetime;
-      this.choosedate = result.choosedate; 
+      this.choosedate = result.choosedate;
     });
   }
 

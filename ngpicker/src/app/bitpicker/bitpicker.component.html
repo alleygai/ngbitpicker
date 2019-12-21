@@ -1,8 +1,12 @@
-<ol>
+<!-- <ol>
     <li>
         <button mat-raised-button="" (click)="openDialog()">Pick Bit</button>
     </li>
     <li *ngIf="choosetime">
         You chose: <i>{{choosetime}}</i>
     </li>
-</ol>
+</ol> -->
+
+<ul>
+    <app-item *ngFor="let point of listArr" [item]="point"></app-item>
+</ul>

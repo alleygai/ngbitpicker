@@ -1,0 +1,3 @@
+<ul [ngClass]="{'show': ifShow}">
+  <li *ngFor="let item of bitArr" (click)="setBit(item)">{{item}}</li>
+</ul>
