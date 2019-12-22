@@ -21,7 +21,7 @@
         <!-- <ngb-timepicker #tp name="timepicker" [ngModel]="inputdata.choosetime" (ngModelChange)="onTimeChange($event)"
             [seconds]="seconds" [hourStep]="hourStep" [minuteStep]="minuteStep" [secondStep]="secondStep">
         </ngb-timepicker> -->
-        <ngb-timepicker [ngModel]="inputdata.pickedtime" [seconds]="true">
+        <ngb-timepicker [(ngModel)]="inputdata.pickedtime" [seconds]="true">
         </ngb-timepicker>
     </div>
 </div>

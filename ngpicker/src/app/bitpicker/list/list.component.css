@@ -3,7 +3,7 @@ ul {
   top: 45px;
   left: -30px;
   list-style: none;
-  width: 160px;
+  width: 200px;
   flex-wrap: wrap;
   display: none;
 }
@@ -13,13 +13,16 @@ ul.show {
 }
 
 li {
-  width: 20px;
-  height: 20px;
+  z-index: 999;
+  width: 25px;
+  height: 25px;
   text-align: center;
   line-height: 20px;
-  background-color: #0189ff;
-  border-right: 1px solid #fff;
+  background-color: #fff;
+  border: 1.5px solid #0189ff;
   box-sizing: border-box;
-  color: #fff;
+  color: #000000;
   cursor: pointer;
+  padding: 2px;
+  margin: 0 0 -2px -2px;
 }
