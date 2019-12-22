@@ -9,6 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { BitpickerComponent } from './bitpicker/bitpicker.component';
 import { ListComponent } from './bitpicker/list/list.component';
 import { ItemComponent } from './bitpicker/item/item.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ItemComponent } from './bitpicker/item/item.component';
     FormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    NgMaterialModule
+    NgMaterialModule,
+    NgbModule
   ],
   providers: [],
   entryComponents: [DatepickerComponent, DatepickerComponentDialog],

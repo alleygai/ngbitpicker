@@ -5,7 +5,7 @@
     <li *ngIf="choosedate">
         You chose date: <i>{{choosedate}}</i>
     </li>
-    <li *ngIf="choosetime">
-        You chose time: <i>{{choosetime}}</i>
+    <li *ngIf="pickedtime">
+        You chose time: <i>{{pickedtime.hour}}:{{pickedtime.minute}}:{{pickedtime.second}}</i>
     </li>
 </ol>

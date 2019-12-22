@@ -15,9 +15,14 @@
         </mat-form-field>
     </div>
     <div>
-        <mat-form-field>
+        <!-- <mat-form-field>ß
             <input matInput placeholder="choose time" [(ngModel)]="inputdata.choosetime">
-        </mat-form-field>
+        </mat-form-field> -->
+        <!-- <ngb-timepicker #tp name="timepicker" [ngModel]="inputdata.choosetime" (ngModelChange)="onTimeChange($event)"
+            [seconds]="seconds" [hourStep]="hourStep" [minuteStep]="minuteStep" [secondStep]="secondStep">
+        </ngb-timepicker> -->
+        <ngb-timepicker [ngModel]="inputdata.pickedtime" [seconds]="true">
+        </ngb-timepicker>
     </div>
 </div>
 <div mat-dialog-actions style="float: right;">
